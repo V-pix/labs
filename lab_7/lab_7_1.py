@@ -11,7 +11,7 @@ def get_sum_digits(n):
     return sum
 
 
-n = float(input("Введите число n: "))
+n = int(input("Введите число n: "))
 
 if n <= 0:
     print("Должно быть n > 0")

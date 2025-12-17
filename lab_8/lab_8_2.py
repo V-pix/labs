@@ -6,13 +6,13 @@
 
 def get_max_abs_and_new_matrix(A):
     n = len(A)
-    max_abs = abs(A[0][0])
+    max_abs = None
     max_i = 0
     max_j = 0
 
     for i in range(n):
         for j in range(n):
-            if abs(A[i][j]) > max_abs:
+            if max_abs is None or abs(A[i][j]) > max_abs:
                 max_abs = abs(A[i][j])
                 max_i = i
                 max_j = j
